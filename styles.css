@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #95a8e1, #ffffff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff0000; /* Color rojo */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Margen superior */
+    font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+button {
+    display: inline-flex;
+    margin: 10px 5px; /* Margen horizontal entre los botones */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff8e3c;
+}
+
+#previousRolls {
+    float: left; /* Coloca la tabla a la izquierda */
+    margin-top: 40px; /* Ajusta el margen superior */
+    margin-left: 200px; /* Despegue de la izquierda */
+    border-collapse: collapse;
+    width: auto; /* Cambiar a auto para permitir que la tabla se ajuste al contenido */
+    max-width: 50%; /* Asegurar que la tabla no se extienda más allá del ancho de su contenedor */
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 9px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 20px; /* Reducir el tamaño de la fuente */
+    margin-right: auto; /* Centrar la tabla horizontalmente */
+}
+
+#previousRolls th, #previousRolls td {
+    border: 5px solid #ddd;
+    padding: 15px; /* Reducir el espaciado interno */
+    text-align: center;
+}
+
+#previousRolls th {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+#previousRolls tr:nth-child(even) {
+    background-color: #ff8e3c;
+}
+
+#previousRolls tr:hover {
+    background-color: #ff4d4d;
+}
+
+#myChart {
+    background-color: #ffffff;
+    width: calc(50% - 20px); /* Ancho de la gráfica */
+    height: auto; /* Alto de la gráfica */
+    margin-top: 40px; /* Ajusta el margen superior */
+    margin-right: 200px; /* Despegue de la derecha */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    float: right; /* Coloca la gráfica a la izquierda */
+}
+
+.dadoContainer {
+    overflow: hidden;
+    text-align: center;
+}
+
+.espacio3D {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 1000px;
+    transform: scale(0.75);
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
